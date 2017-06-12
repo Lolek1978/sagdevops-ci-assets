@@ -50,7 +50,9 @@
 	</target>
 	
 	<target name="initISConfigDir" unless="isConfigDir">
-		<property name="isConfigDir" value=""/>
+	<fail message="Property 'isConfigDir' nie ustawiono!"/>
+<!--		<property name="isConfigDir" value=""/>-->
+
 	</target>
 	
 	<target name="initBPMProjectsDir" unless="bpmProjectsDir">
